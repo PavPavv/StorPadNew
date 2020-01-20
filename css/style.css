@@ -267,13 +267,28 @@ header button{
     bottom: -101%;
     width: 100%;
     height: 64.5%;
-    background:  url('../i/general/big_thing2.png') no-repeat 0 29%;
+    background:  url('../i/general/') no-repeat 0 29%;
     background-size: cover;
 }
 /* SOLUTIONS */
 .solutions{
     padding-top: 7vw;
     background: #fafafa;
+}
+.solutions button{
+    margin-bottom: 12vw;
+}
+.solutionH2{
+    display: flex;
+    z-index: 1;
+}
+.solutionH2 div:first-child{
+    display: flex;
+    flex: 2;
+}
+.solutionH2 div:last-child{
+    display: flex;
+    flex: 1;
 }
 h2{
     font-family: 'Gilroy_Bold';
@@ -287,7 +302,9 @@ h2 span {
 .items{
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     flex: 1;
+    order: 2;
     padding-top: 6vw;
 }
 .solutionWrap{
@@ -297,6 +314,7 @@ h2 span {
     display: flex;
     flex-direction: column;
     flex: 1;
+    width: 18vw;
     height: 240px;
     padding-bottom: 2vw;
 }
@@ -324,9 +342,12 @@ h2 span {
 .adaptation{
     background: url('../i/icon/solutions-adaptation-ic.svg') center center no-repeat;
 }
+.box{
+    width: 65%;
+}
 .solution-text{
     text-transform: lowercase;
-    width: 65%;
+    width: 100%;
     font-family: 'OpenSans-Regular';
     font-size: 0.9375em;
 }
@@ -336,9 +357,10 @@ h2 span {
     display: flex;
     flex-direction: column;
     flex: 1;
+    order: 1;
     padding-bottom: 5vw;
     height: auto;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: space-between; 
     overflow: hidden;
 }
@@ -346,13 +368,14 @@ h2 span {
     position: relative;
     display: block;
     z-index: 4;
-    max-width: 875px;
+    max-width: 668px;
     width: 100%;
-    max-height: 665px;
+    max-height: 634px;
     height: 100%;
-    background:  url('../i/content/retail.png') no-repeat center center;
+    background: url('../i/content/retailNew.svg') no-repeat center center;
     background-size: contain;
 }
+
 /* FEATURES */
 .features{
     padding-top: 3vw;
@@ -547,6 +570,9 @@ footer .container{
     body{
         font-size: 14px;
     }
+    .solution{
+        align-items: flex-start;
+    }
 }
 @media (max-width: 1270px) {
     body{
@@ -587,20 +613,23 @@ footer .container{
         margin-bottom: 3vw;
     }
     .interactive-img{
-        background: url('../i/content/features-interactive.png') no-repeat center center;
+        /* background: url('../i/content/features-interactive.png') no-repeat center center; */
         background-size: contain;
     }
     .software-img{
-        background: url('../i/content/features-software.png') no-repeat center center;
+        /* background: url('../i/content/features-software.png') no-repeat center center; */
         background-size: contain;
     }
     .integration-img{
-        background: url('../i/content/features-integration.png') no-repeat center center;
+        b/* ackground: url('../i/content/features-integration.png') no-repeat center center; */
         background-size: contain;
     }
     .profile-img{
-        background: url('../i/content/features-profile.png') no-repeat center center;
+        /* background: url('../i/content/features-profile.png') no-repeat center center; */
         background-size: contain;
+    }
+    .box{
+        width: 80%;
     }
 }
 @media (max-width: 940px) {
@@ -615,6 +644,25 @@ footer .container{
     }
     .figure{
         display: none;
+    }
+    .solutionH2{
+        display: flex;
+        z-index: 10;
+    }
+    .solutionH2 div:first-child{
+        display: flex;
+        flex: 1;
+    }
+    .solutionH2 div:last-child{
+        display: flex;
+        flex: 1;
+    }
+    .imageWrap{
+        z-index: 0;
+        flex: 2;
+        order: 1;
+        padding-bottom: 5vw;
+        margin-top: 0;
     }
 }
 @media (max-width: 800px) {
@@ -683,7 +731,7 @@ footer .container{
     }
     h2{
         font-family: 'Gilroy_Bold';
-        font-size: 2.25em;
+        font-size: 2.05em;
         line-height: 1.2em;
         padding-bottom: 4vw;
     }
@@ -699,11 +747,19 @@ footer .container{
         align-items: center;
         height: 170px;
     }
+    .box{
+        justify-content: center;
+        align-items: center;
+        height: 170px;
+    }
     .select{
         width: 9px;
         height: 9px;
         background:  url('../i/icon/icon-arrow_filled.png') 0 0 no-repeat;
         background-size: 100%;
+    }
+    .icon{
+        margin: 0 auto 20px auto;
     }
     .ready-img{
         display: none;
@@ -726,6 +782,15 @@ footer .container{
     }
     .solutions{
         padding-bottom: 12vw;
+    }
+    .solutionH2{
+        padding-bottom: 40px;
+    }
+    .solutionH2 div:first-child{
+        display: none;
+    }
+    .solution{
+        width: 100%;
     }
     .features{
         padding-top: 9vw;
