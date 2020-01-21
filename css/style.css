@@ -589,6 +589,9 @@ footer .container{
         justify-content: space-between;
         align-items: center;
     }
+    .colTwo{
+        height: auto;
+    }
 }
 @media(max-width: 1200px) {
     nav{
@@ -641,7 +644,7 @@ footer .container{
 @media (max-width: 940px) {
     .btn{
         width: 120px;
-        height: 25px;
+        height: 35px;
         font-size: 12px;
     }
     .langIc{
@@ -775,7 +778,7 @@ footer .container{
         width: 69%;
     }
     .main{
-        padding-bottom: 5vw;
+        padding-bottom: 30px;
     }
     .figure{
         display: none;
@@ -790,9 +793,9 @@ footer .container{
     }
 }
 @media(max-width: 408px) {
-    .main{
+/*     .main{
         padding-bottom: 20vw;
-    }
+    } */
     .btn{
         margin-top: 3vw;
     }
